@@ -1,0 +1,47 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.board {
+  width: 500px;
+  height: 500px;
+  background-color: #34e7e4;
+  border: 3px solid #ff3f34;
+  display: flex;
+  flex-direction: column;
+}
+.tic {
+  text-align: center;
+  color: #ff3f34;
+  background-color: lightpink;
+}
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+}
+
+.square {
+  flex: 33%;
+  height: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  color: #ff3838;
+  font-family: sans-serif;
+}
+
+.square:active {
+  background-color: #fff200;
+}
